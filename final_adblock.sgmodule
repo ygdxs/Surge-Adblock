@@ -7,14 +7,14 @@
 
 
 [Rule]
-#！百度贴吧
+# 百度贴吧
 RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad.list,REJECT-DROP
-#！高德地图
+# 高德地图
 AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",extended-matching),(USER-AGENT,"AMapiPhone*")),REJECT
 DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching,pre-matching
 DOMAIN,free-aos-cdn-image.amap.com,REJECT,extended-matching,pre-matching
 DOMAIN-SUFFIX,v.smtcdns.com,REJECT,extended-matching,pre-matching
-#！顺丰速运
+# 顺丰速运
 DOMAIN,adsmind.gdtimg.com,REJECT,extended-matching,pre-matching
 DOMAIN,adsmind.ugdtimg.com,REJECT,extended-matching,pre-matching
 DOMAIN,c2.gdt.qq.com,REJECT,extended-matching,pre-matching
@@ -64,15 +64,29 @@ DOMAIN,user.jpush.cn,REJECT,extended-matching,pre-matching
 DOMAIN-SUFFIX,jiguang.cn,REJECT,extended-matching,pre-matching
 DOMAIN-SUFFIX,jpush.cn,REJECT,extended-matching,pre-matching
 DOMAIN-SUFFIX,jpush.io,REJECT,extended-matching,pre-matching
-#！阿里云盘
+# 阿里云盘
 IP-CIDR,203.107.1.1/24,REJECT,no-resolve,pre-matching
-#！闲鱼
+# 闲鱼
 AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",extended-matching),(USER-AGENT,"%E9%97%B2%E9%B1%BC*")),REJECT
-#！贴吧
+# 贴吧
 DOMAIN,afd.baidu.com,REJECT,extended-matching,pre-matching
 DOMAIN,mobads.baidu.com,REJECT,extended-matching,pre-matching
 DOMAIN,180.76.76.200,REJECT,extended-matching,pre-matching
 IP-CIDR,180.76.76.200/32,REJECT,no-resolve,pre-matching
+# 菜鸟
+AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",extended-matching),(USER-AGENT,"Cainiao4iPhone*")),REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT,extended-matching,pre-matching
+DOMAIN,amdc.m.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,apiv4-iyes.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns.alicdn.com,REJECT,extended-matching,pre-matching
+DOMAIN,huichuan-mc.sm.cn,REJECT,extended-matching,pre-matching
+DOMAIN,huichuan.sm.cn,REJECT,extended-matching,pre-matching
+DOMAIN,iyes.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,mc.atm.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,vali-g1.cp31.ott.cibntv.net,REJECT,extended-matching,pre-matching
+DOMAIN,vali-ugc.cp31.ott.cibntv.net,REJECT,extended-matching,pre-matching
+DOMAIN,yk-ssp.ad.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,ykad-data.youku.com,REJECT,extended-matching,pre-matching
 
 
 
@@ -82,7 +96,7 @@ IP-CIDR,180.76.76.200/32,REJECT,no-resolve,pre-matching
 
 
 [Map Local]
-#! 高德地图
+# 高德地图
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200
@@ -94,14 +108,14 @@ IP-CIDR,180.76.76.200/32,REJECT,no-resolve,pre-matching
 ^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200
 ^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200
 ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/king_toolbox_car_bubble|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200
-#！顺丰速运
+# 顺丰速运
 ^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryInfoFlow$ data-type=text data="{}" status-code=200
 ^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-video\/video\/app\/video\/labelClusterList$ data-type=text data="{}" status-code=200
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList$ data-type=text data="{}" status-code=200
-#！阿里云盘
+# 阿里云盘
 ^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle data-type=text data="{}" status-code=200
 ^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders data-type=text data="{}" status-code=200
-#！闲鱼
+# 闲鱼
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/ data-type=text data="{}" status-code=200
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.list\/ data-type=text data="{}" status-code=200
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.resell\.recommendorhotcate\/ data-type=text data="{}" status-code=200
@@ -113,12 +127,12 @@ IP-CIDR,180.76.76.200/32,REJECT,no-resolve,pre-matching
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade\/ data-type=text data="{}" status-code=200
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ data-type=text data="{}" status-code=200
 ^https:\/\/h5\.m\.goofish\.com\/wow\/moyu\/moyu-project\/[\w-]*search[\w-]*\/pages\/ data-type=text data=" " status-code=200
-#！酷安
+# 酷安
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data-type=text data="{}" status-code=200
-#！贴吧
+# 贴吧
 ^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover data-type=text data="{}" status-code=200
 ^https:\/\/tiebac\.baidu\.com\/c\/f\/forum\/forumGuide data-type=text data="{}" status-code=200
-#！虎扑
+# 虎扑
 ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/reddot\/v1\/app\/getReddot data-type=text data="{}" status-code=200
 ^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/(bbsallapi\/tag\/v1\/heatTag|bbsrankapi\/v1\/rating\/list) data-type=text data="{}" status-code=200
 ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/search\/v2\/(hintkeylist|hotkeylist) data-type=text data="{}" status-code=200
@@ -127,17 +141,32 @@ IP-CIDR,180.76.76.200/32,REJECT,no-resolve,pre-matching
 ^https:\/\/fairy\.mobileapi\.hupu\.com\/gallery\/getmod2 data-type=text data=" " status-code=200
 ^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplcommentapi\/bpl\/score_tab\/groups data-type=text data="{}" status-code=200
 ^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplapi\/banner\/getLocationBanners data-type=text data="{}" status-code=200
+# 菜鸟
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.home\.tabbar\.marketing\.get\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.cncommunity\.my\.station\.query\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbopen\.miniapp\.recommend\.cpc\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close)\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(homepage\.merge|tabbar\.marketing)\.get\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cnactivitycenter data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent\.cn data-type=text data="{}" status-code=200
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad data-type=text data="{}" status-code=200
+
+
+
 
 
 
 [Script]
-#! 百度贴吧
+# 百度贴吧
 贴吧json = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0
 贴吧proto = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd,requires-body=1,binary-body-mode=1,max-size=-1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,argument=per_filter_video_thread={{{per_filter_video}}}
-#! 起点中文
+# 起点中文
 起点json = type=http-response,pattern=^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/qidian.js
 body_rewrite_19 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/body-rewrite.js, requires-body=true, max-size=-1, timeout=30, argument=%5B%5B%22json-del%22%2C%5B%22data.commonMaterial%22%2C%22data.tipsOperationLocation%22%2C%22data.resourcePlacement%22%5D%5D%5D
-#! 高德地图
+# 高德地图
 body_rewrite_20 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/body-rewrite.js, requires-body=true, max-size=-1, timeout=30, argument=%5B%5B%22json-del%22%2C%5B%22history_tags%22%5D%5D%5D
 body_rewrite_30 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/body-rewrite.js, requires-body=true, max-size=-1, timeout=30, argument=%5B%5B%22json-del%22%2C%5B%22data.carTips.data.popupInfo%22%5D%5D%5D
 移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
@@ -154,41 +183,48 @@ body_rewrite_30 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/s
 移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
 移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
 移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
-#！阿里云盘
+# 阿里云盘
 移除阿里云盘广告 = type=http-response, pattern=^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(news|widgets), script-path=https://kelee.one/Resource/Script/AliYunDrive/AliYunDrive_remove_ads.js, requires-body=true
 移除阿里云盘广告 = type=http-response, pattern=^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list, script-path=https://kelee.one/Resource/Script/AliYunDrive/AliYunDrive_remove_ads.js, requires-body=true
-#！闲鱼
+# 闲鱼
 移除我的页面推广 = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/, script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body=true
 移除首页信息流推广 = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/, script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body=true
 移除首页顶部标签推广 = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/, script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body=true
 移除搜索结果广告 = type=http-response, pattern=^https:\/\/g-(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/, script-path=https://kelee.one/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body=true
-#！贴吧
+# 贴吧
 清理首页 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/livefeed\/feed, script-path=https://kelee.one/Resource/Script/Tieba/Tieba_remove_ads.js, requires-body=true
 清理侧拉抽屉 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home, script-path=https://kelee.one/Resource/Script/Tieba/Tieba_remove_ads.js, requires-body=true
 清理我的页面 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile, script-path=https://kelee.one/Resource/Script/Tieba/Tieba_remove_ads.js, requires-body=true
 清理首页 = type=http-response, pattern=^https:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom, script-path=https://kelee.one/Resource/Script/Tieba/Tieba_remove_ads.js, requires-body=true
 JSON处理 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$), script-path=https://kelee.one/Resource/Script/Tieba/tieba-json.js, requires-body=true, timeout=10
 Proto处理 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, script-path=https://kelee.one/Resource/Script/Tieba/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10
-#！虎扑
+# 虎扑
 移除虎扑广告 = type=http-response, pattern=^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners, script-path=https://kelee.one/Resource/Script/HUPU/HUPU_remove_ads.js, requires-body=true
 移除虎扑广告 = type=http-response, pattern=^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data, script-path=https://kelee.one/Resource/Script/HUPU/HUPU_remove_ads.js, requires-body=true
 移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList, script-path=https://kelee.one/Resource/Script/HUPU/HUPU_remove_ads.js, requires-body=true
 移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more, script-path=https://kelee.one/Resource/Script/HUPU/HUPU_remove_ads.js, requires-body=true
+# 菜鸟
+移除我的页面推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn, script-path=https://kelee.one/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn, script-path=https://kelee.one/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn, script-path=https://kelee.one/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除消息中心推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn, script-path=https://kelee.one/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除菜鸟小程序推广 = type=http-response, pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow, script-path=https://kelee.one/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
 
 
 
 
 
 [MITM]
-hostname = %APPEND% tiebac.baidu.com,  #!百度贴吧
-magev6.if.qidian.com,  #!起点中文
-m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com,  #!高德地图
-ccsp-egmas.sf-express.com, ucmp.sf-express.com,   #!顺丰速运
-api.alipan.com, member.alipan.com, bizapi.alipan.com,  #!阿里云盘
-acs.m.goofish.com, g-acs.m.goofish.com,  #!闲鱼
-api.coolapk.com,  #!酷安
-tiebac.baidu.com, tieba.baidu.com,  #!贴吧
+hostname = %APPEND% tiebac.baidu.com,  #百度贴吧
+magev6.if.qidian.com,  #起点中文
+m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com,  #高德地图
+ccsp-egmas.sf-express.com, ucmp.sf-express.com,   #顺丰速运
+api.alipan.com, member.alipan.com, bizapi.alipan.com,  #阿里云盘
+acs.m.goofish.com, g-acs.m.goofish.com,  #闲鱼
+api.coolapk.com,  #酷安
+tiebac.baidu.com, tieba.baidu.com,  #贴吧
 games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com  #！虎扑
+,cn-acs.m.cainiao.com, guide-acs.m.taobao.com  #菜鸟
 
 
 
