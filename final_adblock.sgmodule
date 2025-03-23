@@ -1338,38 +1338,38 @@ body_rewrite_55 = type=http-response, pattern=^https:\/\/api\.gotokeep\.com\/twi
 
 
 [MITM]
-hostname = %APPEND% tiebac.baidu.com,  #百度贴吧
-magev6.if.qidian.com,  #起点中文
-m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com,  #高德地图
-ccsp-egmas.sf-express.com, ucmp.sf-express.com,   #顺丰速运
-api.alipan.com, member.alipan.com, bizapi.alipan.com,  #阿里云盘
-acs.m.goofish.com, g-acs.m.goofish.com,  #闲鱼
-api.coolapk.com,  #酷安
-tiebac.baidu.com, tieba.baidu.com,  #贴吧
-games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com  #！虎扑
-,cn-acs.m.cainiao.com, guide-acs.m.taobao.com  #菜鸟
-,114.115.217.129, home.umetrip.com  #航旅纵横
-,vv.video.qq.com  #腾讯视频
-,*.zhihu.com  #知乎
-,pan.baidu.com, 180.76.76.200, 180.76.76.112  #百度网盘
-,m.baidu.com, www.baidu.com  #百度搜索页
-,afd.baidu.com, newclient.map.baidu.com, yongche.baidu.com, ecom.map.baidu.com  #百度地图
-,-i.vip.iqiyi.com, *.iqiyi.com #爱奇艺视频
-,common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, 162.14.157.*, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, 123.207.209.*, 112.53.55.225, 120.241.142.*, 120.241.143.*, 116.85.*, 139.199.240.84  #滴滴出行
-,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com #淘宝
-,ask.zhaopin.com, cgate.zhaopin.com  #智联招聘
-,api.pinduoduo.com, api.yangkeduo.com #拼多多
-,*.weibo.cn, *.weibo.com, weibo.com  #微博
-,3pp.starbucks.com.cn, aag.enmonster.com, activity.yonghuivip.com, ad.maoyan.com, ad.xiaotucc.com, ads.ishansong.com, alittle-tea.oss-cn-shanghai.aliyuncs.com, api-fouth-mem.huazhu.com, api-marketing.zhinengxiyifang.cn, api.hellobike.com, api.hengdianfilm.com, api.hongyibo.com.cn, api.kuaidihelp.com, api.maoyan.com, api.mcd.cn, api.pinduoduo.com, api.prod.dj.mstand.cn, api.songguo7.com, api.yonghuivip.com, apiproxy.zuche.com, apis.alenable.com, app.95504.net, app.homeinns.com, applets.jtexpress.com.cn, appuser-static.huolala.cn, as.xiaojukeji.com, capis*.didapinche.com, cappapi.alittle-tea.com, cbd-gateway-service-applets.hualala.com, ccmsupport-sz.tenpay.com, coco-com.e.verystar.net, creditcardapp.bankcomm.com, customer-app.sto.cn, daijia.kuaidadi.com, dock.tenchii.com, dsp.fcbox.com, file.dian.so, flow.dmall.com, fscdn.zto.com, gw-passenger-wap.01zhuanche.com, hdgateway.zto.com, htwkop.xiaojukeji.com, images.qmai.cn, lawsonapi.yorentown.com, m.ctrip.com, mapi.xiaotucc.com, mbmodule-openapi.paas.cmbchina.com, member.lxjchina.com.cn, miniapp.sexytea2013.com, minicap.caocaokeji.cn, minifm.maxxipoint.com, minipro.95504.net, miniprogram.ishansong.com, mkt-gateway.tuhu.cn, mobile-api.imlaidian.com, mxsa.mxbc.net, newton.gumingnc.com, passenger.t3go.cn, passengerapi.saicmobility.com, plt.yorentown.com, qapi.huolala.cn, r2.gzyct.com, res.hongyibo.com.cn, res.pizzahut.com.cn, s.jiediankeji.com, saas-ad.cloudpnr.com, sauron-report.yonghuivip.com, smarket.dian.so, sto-customer-app.oss-cn-shanghai.aliyuncs.com, supplier-api.imdada.cn, suyun-guest.daojia.com, tbgapplet.carlsberg.asia, tm-api.pin-dao.cn, ucmp.sf-express.com, ump.ems.com.cn, vod-movie.maoyan.com, webapi.qmai.cn, webchatapp.fcbox.com, wechat-api.i-xiaoma.com.cn, www.deppon.com, wx.bthhotels.com, wx.maoyan.com, wxapp.bestwehotel.com, wxproj.seeyouyima.com, wxs-weixin.sd.zhumanggroup.com, mcsp.cloudpnr.com, api.szbgcx.cn, rms.meituan.com   # 微信小程序
-,api.xiaoheihe.cn #小黑盒
-,api.miaomiaoyd.com #小红书
-,huichuan.sm.cn, stars.shuqireader.com, open-cms-api.quark.cn #夸克
-,api.duitang.com, www.duitang.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com  #堆糖
-,gslbali.ximalaya.com, search.ximalaya.com, searchwsa.ximalaya.com, mobile.ximalaya.com, mobilehera.ximalaya.com, mobwsa.ximalaya.com, m.ximalaya.com, mwsa.ximalaya.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com  #喜马拉雅
-,appapi.51job.com, cupid.51job.com, cupid.51jobapp.com  #前程无忧
-,acs.youku.com, push.m.youku.com, un-acs.youku.com  #优酷
-,api.m.jd.com #京东
-,account.95516.com, base.95516.com, content.95516.com  #云闪付
-,spclient.wg.spotify.com #spotify
-,api.gotokeep.com, kad.gotokeep.com  #keep
-,www.123pan.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com  #123云盘
+hostname = %APPEND% tiebac.baidu.com,
+magev6.if.qidian.com,
+m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com,
+ccsp-egmas.sf-express.com, ucmp.sf-express.com,
+api.alipan.com, member.alipan.com, bizapi.alipan.com,
+acs.m.goofish.com, g-acs.m.goofish.com,
+api.coolapk.com,
+tiebac.baidu.com, tieba.baidu.com,
+games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com
+,cn-acs.m.cainiao.com, guide-acs.m.taobao.com
+,114.115.217.129, home.umetrip.com
+,vv.video.qq.com
+,*.zhihu.com
+,pan.baidu.com, 180.76.76.200, 180.76.76.112
+,m.baidu.com, www.baidu.com
+,afd.baidu.com, newclient.map.baidu.com, yongche.baidu.com, ecom.map.baidu.com
+,-i.vip.iqiyi.com, *.iqiyi.com
+,common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, 162.14.157.*, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, 123.207.209.*, 112.53.55.225, 120.241.142.*, 120.241.143.*, 116.85.*, 139.199.240.84
+,acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
+,ask.zhaopin.com, cgate.zhaopin.com
+,api.pinduoduo.com, api.yangkeduo.com
+,*.weibo.cn, *.weibo.com, weibo.com
+,3pp.starbucks.com.cn, aag.enmonster.com, activity.yonghuivip.com, ad.maoyan.com, ad.xiaotucc.com, ads.ishansong.com, alittle-tea.oss-cn-shanghai.aliyuncs.com, api-fouth-mem.huazhu.com, api-marketing.zhinengxiyifang.cn, api.hellobike.com, api.hengdianfilm.com, api.hongyibo.com.cn, api.kuaidihelp.com, api.maoyan.com, api.mcd.cn, api.pinduoduo.com, api.prod.dj.mstand.cn, api.songguo7.com, api.yonghuivip.com, apiproxy.zuche.com, apis.alenable.com, app.95504.net, app.homeinns.com, applets.jtexpress.com.cn, appuser-static.huolala.cn, as.xiaojukeji.com, capis*.didapinche.com, cappapi.alittle-tea.com, cbd-gateway-service-applets.hualala.com, ccmsupport-sz.tenpay.com, coco-com.e.verystar.net, creditcardapp.bankcomm.com, customer-app.sto.cn, daijia.kuaidadi.com, dock.tenchii.com, dsp.fcbox.com, file.dian.so, flow.dmall.com, fscdn.zto.com, gw-passenger-wap.01zhuanche.com, hdgateway.zto.com, htwkop.xiaojukeji.com, images.qmai.cn, lawsonapi.yorentown.com, m.ctrip.com, mapi.xiaotucc.com, mbmodule-openapi.paas.cmbchina.com, member.lxjchina.com.cn, miniapp.sexytea2013.com, minicap.caocaokeji.cn, minifm.maxxipoint.com, minipro.95504.net, miniprogram.ishansong.com, mkt-gateway.tuhu.cn, mobile-api.imlaidian.com, mxsa.mxbc.net, newton.gumingnc.com, passenger.t3go.cn, passengerapi.saicmobility.com, plt.yorentown.com, qapi.huolala.cn, r2.gzyct.com, res.hongyibo.com.cn, res.pizzahut.com.cn, s.jiediankeji.com, saas-ad.cloudpnr.com, sauron-report.yonghuivip.com, smarket.dian.so, sto-customer-app.oss-cn-shanghai.aliyuncs.com, supplier-api.imdada.cn, suyun-guest.daojia.com, tbgapplet.carlsberg.asia, tm-api.pin-dao.cn, ucmp.sf-express.com, ump.ems.com.cn, vod-movie.maoyan.com, webapi.qmai.cn, webchatapp.fcbox.com, wechat-api.i-xiaoma.com.cn, www.deppon.com, wx.bthhotels.com, wx.maoyan.com, wxapp.bestwehotel.com, wxproj.seeyouyima.com, wxs-weixin.sd.zhumanggroup.com, mcsp.cloudpnr.com, api.szbgcx.cn, rms.meituan.com
+,api.xiaoheihe.cn
+,api.miaomiaoyd.com
+,huichuan.sm.cn, stars.shuqireader.com, open-cms-api.quark.cn
+,api.duitang.com, www.duitang.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+,gslbali.ximalaya.com, search.ximalaya.com, searchwsa.ximalaya.com, mobile.ximalaya.com, mobilehera.ximalaya.com, mobwsa.ximalaya.com, m.ximalaya.com, mwsa.ximalaya.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+,appapi.51job.com, cupid.51job.com, cupid.51jobapp.com
+,acs.youku.com, push.m.youku.com, un-acs.youku.com
+,api.m.jd.com
+,account.95516.com, base.95516.com, content.95516.com
+,spclient.wg.spotify.com
+,api.gotokeep.com, kad.gotokeep.com
+,www.123pan.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
